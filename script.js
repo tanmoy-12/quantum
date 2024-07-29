@@ -1,19 +1,14 @@
-var $cursor = $('.cursor');
+document.addEventListener('DOMContentLoaded', function() {
+  const brandContainer = document.querySelector('.brandContainer');
 
-function moveCursor(e) {
-  $cursor.addClass('is-moving');
-  
-  TweenLite.to($cursor, 0.23, {
-    left: e.pageX,
-    top: e.pageY,
-    ease: Power4.easOut
-  });
-  
-  clearTimeout(timer);
+  function scrollCarousel() {
+      const lastElement = brandContainer.lastElementChild;
+      const clone = lastElement.cloneNode(true);
+      brandContainer.insertBefore(clone, brandContainer.firstElementChild);
+      brandContainer.removeChild(lastElement);
+  }
 
-   var timer = setTimeout(function() {
-       $cursor.removeClass('is-moving');
-   }, 300);
-}
+  setInterval(scrollCarousel, 1000);
+});
 
-$(window).on('mousemove', moveCursor);
+
