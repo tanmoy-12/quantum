@@ -30,7 +30,7 @@ li{
     border: 3px solid #1b1b1b; 
 }
 html {
-    scrollbar-width: thin;
+    scrollbar-width:thin;
     scrollbar-color: rgb(3, 55, 224) #1b1b1b00;
 }
 ::-webkit-scrollbar-button {
@@ -325,10 +325,12 @@ html {
 }
 .brandContainer{
     display: flex;
-    width: 100%;
+    background-color: #ebebeb81;
+    margin: 0 auto;
+    width: 90%;
     justify-content: center;
     padding: 18px;
-    animation: 3s linear slide infinite;
+    overflow: hidden;
   }
   .container3 h4{
     font-weight: 500;
