@@ -4,14 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        crossorigin="anonymous" />
-    
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Laila:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-        <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Laila:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -19,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <title>Quantum</title>
     <link rel="stylesheet" href="style.css">
@@ -56,7 +52,7 @@
             <div class="container1">
                 <div class="cards">
                     <div class="card">
-                        <h2>1L+</h2>
+                        <h2>5K+</h2>
                         <h3>Happy Customers</h3>
                     </div>
                     <div class="card">
@@ -69,96 +65,384 @@
                     </div>
                 </div>
             </div>
-            <div class="about-us">
-                <div class="about-us-text">
-                    <h4>| ABOUT US</h4>
-                    <p>Founded in 2004, Quantum has established itself as a premier destination for all your PC and PC accessory needs. With a commitment to quality and customer satisfaction, we offer a wide range of products, from high-performance desktops and laptops to essential accessories like keyboards, mice, and monitors. Our team of experts is dedicated to providing personalized service and support to ensure you find the perfect solutions for your computing needs. At Quantum, we pride ourselves on staying ahead of industry trends, offering the latest technology at competitive prices. Join our community of satisfied customers and experience the Quantum difference today.</p>
-                </div>
-                <div class="about-us-image">
-                    <div class="aboutImage">
-                        <img src="https://images.idgesg.net/images/article/2019/09/hp_s430c_curved_ultrawide_monitor_two_pcs-100811199-orig.jpeg">
+            <div class="wrapper1">
+                <h4 style="text-align: center; font-weight: 600;color: #001e81;">Category Of Products Available</h4>
+                <div class="products">
+                    <div class="product" id="p1">
+                        <div class="product-text">
+                            <span>Motherboards</span>
+                            <p>Starting From</p>
+                            <h4>₹ 1499</h4>
+                        </div>
+                        <div class="product-image">
+                            <img src="images/motherboard.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product" id="p2">
+                        <div class="product-text">
+                            <span>Printers</span>
+                            <p>Starting From</p>
+                            <h4>₹ 3999</h4>
+                        </div>
+                        <div class="product-image">
+                            <img src="images/printer_ad.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product" id="p3">
+                        <div class="product-text">
+                            <span>Monitors</span>
+                            <p>Starting From</p>
+                            <h4>₹ 2999</h4>
+                        </div>
+                        <div class="product-image">
+                            <img src="images/monitor_ad.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product" id="p4">
+                        <div class="product-text">
+                            <span>Laptops</span>
+                            <p>Starting From</p>
+                            <h4>₹ 19,999</h4>
+                        </div>
+                        <div class="product-image">
+                            <img src="images/laptop_ad.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product" id="p5">
+                        <div class="product-text">
+                            <span>SSDs</span>
+                            <p>Starting From</p>
+                            <h4>₹ 699</h4>
+                        </div>
+                        <div class="product-image">
+                            <img src="images/SSD.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product" id="p6">
+                        <div class="product-text">
+                            <span>Sound devices</span>
+                            <p>Starting From</p>
+                            <h4>₹ 499</h4>
+                        </div>
+                        <div class="product-image">
+                            <img src="images/sound_ad.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product" id="p7">
+                        <div class="product-text">
+                            <span>CCTV Cameras</span>
+                            <p>Starting From</p>
+                            <h4>₹ 899</h4>
+                        </div>
+                        <div class="product-image">
+                            <img src="images/cctv.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product" id="p8">
+                        <div class="product-text">
+                            <span>Graphics Cards</span>
+                            <p>Starting From</p>
+                            <h4>₹ 1599</h4>
+                        </div>
+                        <div class="product-image">
+                            <img src="images/gpu_ad.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product" id="p9">
+                        <div class="product-text">
+                            <span>RAM</span>
+                            <p>Starting From</p>
+                            <h4>₹ 899</h4>
+                        </div>
+                        <div class="product-image">
+                            <img src="images/ram.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-            <h4 style="text-align: center;font-weight: 600;color: rgb(0, 0, 153);">Services Offered By Us</h4>
-            <div class="features">
-                <div class="feature">
-                    <h2>Wide Range of Products</h2>
-                    <div class="pt1c">
-                        <div class="pt1">
-                            <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                            <div class="pt1-text">We provide our customers a diverse selection of laptops, desktops, and accessories from top brands</div>
+            <div class="supports">
+                <div class="support">
+                    <div class="supportIcon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div class="supportText">
+                        <p>24/7 Support</p>
+                        <span>24/7 Technical Support</span>
+                    </div>
+                </div>
+                <div class="support">
+                    <div class="supportIcon">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <div class="supportText">
+                        <p>Secure Payments</p>
+                        <span>All paymeent options Available</span>
+                    </div>
+                </div>
+                <div class="support">
+                    <div class="supportIcon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <div class="supportText">
+                        <p>Quality Products</p>
+                        <span>Good quality products</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper2">
+                <h4 style="text-align: center;font-weight: 600;color: rgb(0, 0, 153);margin-top: 25px;">Services Offered By Us</h4>
+                <div class="features">
+                    <div class="feature">
+                        <h2>Wide Range of Products</h2>
+                        <div class="pt1c">
+                            <div class="pt1">
+                                <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
+                                <div class="pt1-text">We provide our customers a diverse selection of laptops, desktops, and accessories from top brands</div>
+                            </div>
+                            <div class="pt1">
+                                <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
+                                <div class="pt1-text">We have exclusive products or limited-edition items</div>
+                            </div>
                         </div>
-                        <div class="pt1">
-                            <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                            <div class="pt1-text">We have exclusive products or limited-edition items</div>
+                    </div>
+                    <div class="feature">
+                        <h2>Custom PC Builds</h2>
+                        <div class="pt1c">
+                            <div class="pt1">
+                                <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
+                                <div class="pt1-text">Offer custom PC building services tailored to individual needs, from gaming rigs to professional workstations</div>
+                            </div>
+                            <div class="pt1">
+                                <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
+                                <div class="pt1-text">We provide user-friendly options for our customers to design their own PCs</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature ">
+                        <h2>Competitive Pricing</h2>
+                        <div class="pt1c">
+                            <div class="pt1">
+                                <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
+                                <div class="pt1-text">We provide a competitive pricing and price match guarantees for each & every products</div>
+                            </div>
+                            <div class="pt1">
+                                <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
+                                <div class="pt1-text">We have different payment options including online payments</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <h2>Technical Support and Servicing</h2>
+                        <div class="pt1c">
+                            <div class="pt1">
+                                <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
+                                <div class="pt1-text">We have every laptop and PC servicing options, including repairs, upgrades, and maintenance plans</div>
+                            </div>
+                            <div class="pt1">
+                                <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
+                                <div class="pt1-text">We emphasize the expertise of our technical team and the use of genuine parts</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <h2>Comprehensive Diagnostics</h2>
+                        <div class="pt1c">
+                            <div class="pt1">
+                                <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
+                                <div class="pt1-text">We offer detailed diagnostics to identify and resolve hardware and software issues</div>
+                            </div>
+                            <div class="pt1">
+                                <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
+                                <div class="pt1-text">We provide a full report with recommendations for necessary repairs or upgrades</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <h2>Hardware Repairs and Upgrades</h2>
+                        <div class="pt1c">
+                            <div class="pt1">
+                                <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
+                                <div class="pt1-text">Specialize in repairs and replacements for key components such as motherboards, CPUs, GPUs, and storage devices</div>
+                            </div>
+                            <div class="pt1">
+                                <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
+                                <div class="pt1-text">We offer upgrade services to enhance performance, such as adding more RAM or upgrading to SSDs</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="feature">
-                    <h2>Custom PC Builds</h2>
-                    <div class="pt1c">
-                        <div class="pt1">
-                            <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                            <div class="pt1-text">Offer custom PC building services tailored to individual needs, from gaming rigs to professional workstations</div>
-                        </div>
-                        <div class="pt1">
-                            <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                            <div class="pt1-text">We provide user-friendly options for our customers to design their own PCs</div>
-                        </div>
-                    </div>
+            </div>
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="overlay">
+                   <div class="overlay-text">
+                    <p>If you're looking to buy your dream PC, PC accessories, or laptops, or if you need any kind of laptop repair services or solutions for PC-related issues, visit our store. At Quantum, we offer a wide range of high-performance components and expert services to meet all your computing needs. Whether you're a gamer, a professional, or just need a reliable machine, our knowledgeable staff is here to help. Contact us via call or WhatsApp at 9331863389 or email us at sen_samir@rediffmail.com to learn more about our products and services.</p>
+                   </div>
                 </div>
-                <div class="feature ">
-                    <h2>Competitive Pricing</h2>
-                    <div class="pt1c">
-                        <div class="pt1">
-                            <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                            <div class="pt1-text">We provide a competitive pricing and price match guarantees for each & every products</div>
+            </div>
+            <div class="wrapper3">
+                <div class="swiper mySwiper" id="s1">
+                    <h4 style="color: rgb(0, 56, 78);font-size: 500;text-align: center;">What Our Clients Say About Us</h4>
+                    <div class="cunderline" id="u1"></div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"> 
+                        <div class="review" data-swiper-parallax-opacity="0.5" loading="lazy">
+                            <div class="customer-name"  data-swiper-parallax="-100">
+                                <h3>Arpita Das</h3>
+                            </div>
+                            <div class="stars"  data-swiper-parallax="-200">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <div class="customer-rating"  data-swiper-parallax="-300">
+                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;One of the best 👌shop in the Naihati area. All products quality is so good 👍. Accurate price quick replesmen.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                            </div>
                         </div>
-                        <div class="pt1">
-                            <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                            <div class="pt1-text">We have different payment options including online payments</div>
+                      </div>
+                      <div class="swiper-slide"> 
+                        <div class="review">
+                            <div class="customer-name">
+                                <h3>Sabir Hossain</h3>
+                            </div>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <div class="customer-rating">
+                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Good laptop service, low service charge. on sport repairing. 25 years experience . Reliable laptop service center in 24pgs.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                            </div>
                         </div>
+                      </div>
+                      <div class="swiper-slide"> 
+                        <div class="review">
+                            <div class="customer-name">
+                                <h3>Subhadip Dutta</h3>
+                            </div>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <div class="customer-rating">
+                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;You can be sure to get the best customer service and total satisfaction. After sales service is great as well.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide"> 
+                        <div class="review">
+                            <div class="customer-name">
+                                <h3>Subhodeep Sadhukhan</h3>
+                            </div>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <div class="customer-rating">
+                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;One of the best 👌shop in the Naihati area. All products quality is so good 👍.  Accurate price quick replesment&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide"> 
+                        <div class="review">
+                            <div class="customer-name">
+                                <h3>Sonai Ghosh</h3>
+                            </div>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <div class="customer-rating">
+                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Quantum has very good service since 2006, product price is very resealable, over all it has much better then other.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide"> 
+                        <div class="review">
+                            <div class="customer-name">
+                                <h3>Satish Chandra Bose</h3>
+                            </div>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="notstar">&#9733;</span>
+                            </div>
+                            <div class="customer-rating">
+                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;They are selling computer accessories at reasonable price.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide"> 
+                        <div class="review">
+                            <div class="customer-name">
+                                <h3>Dipanwita Ghosh</h3>
+                            </div>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <div class="customer-rating">
+                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Nice service. Very gentle behaviour. Reasonable pricing. Best in Naihati.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide"> 
+                        <div class="review">
+                            <div class="customer-name">
+                                <h3>Jeet Saha Roy</h3>
+                            </div>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <div class="customer-rating">
+                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Nice store...perfect cost of material.. 100% trustable store...support for customer is very good..&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide"> 
+                        <div class="review">
+                            <div class="customer-name">
+                                <h3>Tapas Chakraborty</h3>
+                            </div>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <div class="customer-rating">
+                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Good laptop service centre. Prices are very cheap.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="feature">
-                    <h2>Technical Support and Servicing</h2>
-                    <div class="pt1c">
-                        <div class="pt1">
-                            <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                            <div class="pt1-text">We have every laptop and PC servicing options, including repairs, upgrades, and maintenance plans</div>
-                        </div>
-                        <div class="pt1">
-                            <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                            <div class="pt1-text">We emphasize the expertise of our technical team and the use of genuine parts</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature">
-                    <h2>Comprehensive Diagnostics</h2>
-                    <div class="pt1c">
-                        <div class="pt1">
-                            <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                            <div class="pt1-text">We offer detailed diagnostics to identify and resolve hardware and software issues</div>
-                        </div>
-                        <div class="pt1">
-                            <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                            <div class="pt1-text">We provide a full report with recommendations for necessary repairs or upgrades</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature">
-                    <h2>Hardware Repairs and Upgrades</h2>
-                    <div class="pt1c">
-                        <div class="pt1">
-                            <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                            <div class="pt1-text">Specialize in repairs and replacements for key components such as motherboards, CPUs, GPUs, and storage devices</div>
-                        </div>
-                        <div class="pt1">
-                            <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                            <div class="pt1-text">We offer upgrade services to enhance performance, such as adding more RAM or upgrading to SSDs</div>
-                        </div>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
             <div class="container3">
@@ -190,20 +474,9 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="assembled">
-                <div class="assembled-left">
-                    <div class="assembledImage">
-                        <img src="https://i.ytimg.com/vi/QAMRRmUHO6o/maxresdefault.jpg" alt="">
-                    </div>
-                </div>
-                <div class="assembled-right">
-                    <p>
-                        Build your dream gaming PC by visiting our shop, Quantum. Explore our extensive selection of high-performance components, from cutting-edge graphics cards to powerful processors, and customize your setup to create the ultimate gaming experience tailored to your needs.
-                    </p>
-                </div>
-            </div> -->
-            <!-- <div class="wave-box"></div> -->
-
+            <div class="wrapper4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.6891252754262!2d88.42487937419128!3d22.887939579268362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8969a675181df%3A0xa8c6f4fb70d4a704!2sNAIHATI%20QUANTUM!5e0!3m2!1sen!2sin!4v1723387593932!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             <div class="footer">
                 <div class="frow">
                     <div class="fcolumn">
@@ -231,8 +504,8 @@
                     </div>
                     <div class="fcolumn">
                         <h3>Contact Us <div class="underline"><span></span></div></h3>
-                        <p>+91-9331863389/ 9230558682</p>
-                        <p>+91-9230366322</p>
+                        <p>+91-9331863389</p>
+                        <p>+91-9230558682</p>
                     </div>
                 </div>
                 <hr>
@@ -240,6 +513,10 @@
             </div>
         </div>
     </div>
+    <div id="no-connection" style="display: none; text-align: center; margin-top: 50px;">
+        <h1>Please check your internet connection</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

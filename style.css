@@ -41,12 +41,12 @@ html {
 .container{
     /* background: linear-gradient(45deg, #c0c0c0, #9bbbff96, #b7b6f7b0); */
     background-color: #d4d4d4;
-    min-width: 100%;
     width: 100% !important;
     padding: 0;
+    max-width: 100%;
 }
 #slide1{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -155,36 +155,171 @@ html {
     color: #6b6a6d;
     font-weight: 600;
 }
-.about-us{
-    display: flex;
+.wrapper1{
     background-color: #ccced4;
+    padding-top: 16px;
     background-image: url("https://www.suretiimf.com/wp-content/uploads/2020/06/transparent-background-pattern-png-4-1024x512.png");
-    padding: 20px;
-    margin: 20px auto;
-    margin-top: 0;
 }
-.about-us-text{
-    width: 50%;
-    padding: 16px 20px;
-    padding-left: 40px;
-    font-weight: 500;
-    font-size: larger;
-    text-align: justify;
+.products{
+    margin-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    justify-content: center;
 }
-.about-us-image{
-    width: 50%;
-    padding: 16px;
-}
-.aboutImage{
-    width: 100%;
+.product {
+    display: flex;
+    border-radius: 6px;
+    margin: 10px;
+    height: 200px;
     max-width: 400px;
-    border-radius: 50% 0 50% 0;
-    margin: 0 auto;
-    margin-top: 20px;
+    position: relative; /* Needed for the hover effect */
+    overflow: hidden; /* To ensure the hover effect is contained */
+    z-index: 0;
+    background: linear-gradient(to right, #1b1b1b, #696969, #8a8a8a);
+    transition: all 0.3s ease-out; /* Smooth transition for color changes */
 }
-.aboutImage img{
+
+.product:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: #001141;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+    transform: scale(0);
+    transform-origin: top left;
+}
+
+.product:hover:before {
+    transform: scale(1);
+}
+
+
+.product-text span,
+.product-text p,
+.product-text h4 {
+    transition: color 0.3s ease-out;
+}
+
+.product:hover .product-text span {
+    color: #ffffff;
+}
+
+.product:hover .product-text p {
+    color: #ffffff;
+}
+
+.product:hover .product-text h4 {
+    color: #ffffff;
+}
+
+.product-text{
+    padding: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-size: x-large;
+    font-weight: 600;
+}
+.product-text span{
+    font-size: x-large;
+    font-weight: 900;
+    color: #cececec2;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 8px;
+}
+.product-text p{
+    margin-bottom: 2px;
+    color: #e9e9e9;
+}
+.product-text h4{
+    font-weight: 600;
+    color: #d5e6ff;
+}
+.product-image{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 12px;
+}
+.product-image img{
+    min-height: 120px;
+    max-height: 180px;
+    max-width: 200px;
+    margin: auto auto;
+}
+#p1{
+    background: linear-gradient(to right, #1b1b1b, #696969, #8a8a8a);
+}
+#p2{
+    background: linear-gradient(to right, #c28e00, #e4b724, #e6b856);
+}
+#p3{
+    background: linear-gradient(to right, #4c9e00, #47b100, #48ff00);
+}
+#p4{
+    background: linear-gradient(to right, #9b0000, #c50000, #ee0101);
+}
+#p5{
+    background: linear-gradient(to right, #b66d00, #c55f00, #ee7301);
+}
+#p6{
+    background: linear-gradient(to right, #b60064, #c5005c, #ee01bb);
+}
+#p7{
+    background: linear-gradient(to right, #004fb6, #005cc5, #0183ee);
+}
+#p8{
+    background: linear-gradient(to right, #0fb600, #00c54c, #01ee01);
+}
+#p9{
+    background: linear-gradient(to right, #006875, #00bfc5, #01d2ee);
+}
+.wrapper2{
+    background-image: url("https://th.bing.com/th/id/R.72d3986a53c744e4fe72bc0cbdcfb7a3?rik=n0lfpaV0JwXPDg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f13%2fElegant-Pattern-PNG-Transparent-Image.png&ehk=J9WUCdtnP9Oa14s0syy34GFeKsoJjY9g1RZGlnFiWlc%3d&risl=&pid=ImgRaw&r=0");
+}
+.supports{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    border-radius: 50% 0 50% 0;
+    background-color: #fff;
+    padding: 16px 0;
+}
+.support{
+    width: 300px;
+    display: flex;
+    border-radius: 6px;
+    margin-right: 12px;
+    background-color: #f3f3f39d;
+    font-size: large;
+}
+.supportIcon{
+    font-size: 2.6rem;
+    padding: 10px;
+    color: #5f4600;
+}
+.supportText{
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+    color: #707070;
+}
+.supportText p{
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #000a35;
+}
+.supportText span{
+    font-size: small;
 }
 .features{
     margin: 25px auto;
@@ -192,29 +327,55 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: url("https://th.bing.com/th/id/R.72d3986a53c744e4fe72bc0cbdcfb7a3?rik=n0lfpaV0JwXPDg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f13%2fElegant-Pattern-PNG-Transparent-Image.png&ehk=J9WUCdtnP9Oa14s0syy34GFeKsoJjY9g1RZGlnFiWlc%3d&risl=&pid=ImgRaw&r=0");
+    max-width: 1500px;
 }
 .feature {
     display: flex;
     flex-direction: column;
     position: relative;
-    background: linear-gradient(to right, #d1d1d1, #d8d8d8);
+    background: linear-gradient(to right, #ffffff, #e5f0ff);
     margin: 12px;
     border-radius: 6px;
     text-align: center;
     width: 350px;
     justify-content: center;
     padding: 12px;
-    transition: all ease-in 0.5s;
-    border: 5px solid transparent; /* Create space for the border */
-    border-image: conic-gradient(
-        from 0deg,
-        #ffffff,
-        #000c77,
-        #ffffff,
-        #000c77,
-    ) 1; /* Apply the gradient as the border */
+    transition: all 0.5s ease-in;
+    overflow: hidden;
 }
+.feature:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border: 4px solid #000c77;
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    transition: clip-path 0.5s ease-in-out;
+}
+
+.feature:hover:before {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.feature:after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(45deg) translate(-50%, -50%);
+}
+
+.feature:hover:after {
+    transform: rotate(45deg) translate(0, 0);
+}
+
 .feature h2{
     font-size: x-large;
     font-weight: 600;
@@ -376,6 +537,7 @@ html {
 }
 .frow{
     width: 85%;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -440,6 +602,15 @@ html {
         left: 100%;
     }
 }
+.footer h3{
+    font-size: medium;
+}
+.counter{
+    text-align: center;
+    display: flex;
+    margin: 12px auto;
+    justify-content: center;
+}
 .footer hr{
     width: 90%;
     border-radius: 5px;
@@ -459,4 +630,152 @@ html {
           mask: var(--mask);
           height: 100px;
           background-color: #00013f;
+}
+.wrapper3{
+    background-color: #f0f0f0c4;
+    padding: 20px;
+}
+#u1{
+    margin: 20px auto;
+    padding-bottom: 5px;
+    position: relative;
+    max-width: 200px;
+}
+.cunderline::before{
+    border-radius: 8px;
+    bottom: 0;
+    content: "";
+    height: 8px;
+    bottom: -2px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    position: absolute;
+    width: 24px;
+    background: #0099ff;
+    background: #00152c;
+}
+.cunderline::after{
+    border-radius: 8px;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: 0;
+    right: 0px;
+    margin: 0 auto;
+    position: absolute;
+    width: 150px;
+    background: #0099ff;
+    background: #00152c;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+  }
+  #s1{
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  .swiper-pagination-bullet{
+    width: 10px;
+    border-radius: 0;
+    height: 2px;
+  }
+  .review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #cbcedb;
+    padding: 16px;
+    border-radius: 6px;
+    font-size: larger;
+    font-weight: 500;
+    background-image: url('https://img.freepik.com/premium-vector/abstract-seamless-vector-background-white-gray-repeatable-texture-polygon-endless-pattern_547648-3168.jpg?w=360');
+    height: 250px;
+    margin: 0 auto;
+}
+.swiper-slide .review:nth-child(even) {
+    border-top: 10px solid #946500;
+}
+
+.customer-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.customer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.customer-rating p {
+    padding: 0;
+    margin: 0;
+}
+.stars {
+    display: flex;
+    justify-content: center;
+}
+.star {
+    font-size: 2rem;
+    color: rgb(0, 82, 206);
+    cursor: pointer;
+}
+.notstar{
+    font-size: 2rem;
+    color: rgb(160, 160, 160);
+    cursor: pointer;
+}
+.customer-name h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.788); /* Blue background with 50% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.6em;
+    text-align: center;
+}
+.overlay-text{
+    max-width: 1500px;
+    padding: 18px;
+}
+.wrapper4{
+    max-width: 1500px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+.wrapper4 iframe{
+    width: 85%;
+    margin: 0 auto;
+    height: 300px;
+    border-radius: 8px;
 }
