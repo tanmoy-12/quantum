@@ -52,28 +52,47 @@ var swiper = new Swiper(".mySwiper", {
   });
   //Check if device is online or offline
   window.addEventListener('load', function() {
-    // Function to check the online/offline status
+    const customAlert = document.getElementById('custom-alert');
+    const closeAlertBtn = document.getElementById('close-alert');
+
+    // Function to show the custom alert
+    function showCustomAlert(message) {
+        customAlert.querySelector('p').textContent = message;
+        customAlert.style.display = 'flex';
+    }
+
+    // Function to hide the custom alert
+    function hideCustomAlert() {
+        customAlert.style.display = 'none';
+    }
+
+    // Check the connection status when the page loads
     function checkConnection() {
         if (!navigator.onLine) {
-            alert("No internet connection");
+            showCustomAlert("No internet connection");
             document.getElementById('container').style.display = 'none';
             document.getElementById('no-connection').style.display = 'block';
         }
     }
 
-    // Check the connection status when the page loads
+    // Add event listener to the OK button to close the alert
+    closeAlertBtn.addEventListener('click', hideCustomAlert);
+
+    // Check the connection when the page loads
     checkConnection();
 
-    // Listen for changes in the online/offline status
+    // Listen for offline events
     window.addEventListener('offline', function() {
-        alert("No internet connection");
+        showCustomAlert("No internet connection");
         document.getElementById('container').style.display = 'none';
         document.getElementById('no-connection').style.display = 'block';
     });
 
+    // Listen for online events
     window.addEventListener('online', function() {
-        alert("Internet connection restored");
+        hideCustomAlert();
         document.getElementById('container').style.display = 'block';
         document.getElementById('no-connection').style.display = 'none';
+        this.location.reload();
     });
 });
