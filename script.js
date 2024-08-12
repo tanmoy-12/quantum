@@ -1,3 +1,7 @@
+AOS.init();
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const brandContainer = document.querySelector('.brandContainer');
     const brandContents = Array.from(document.querySelectorAll('.brandContent'));

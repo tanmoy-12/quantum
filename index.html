@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Laila:wght@300;400;500;600;700&display=swap"rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Laila:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+CU:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <title>Quantum</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="loader" id="loader">
+        <img src="loader.gif" alt="" srcset="">
+    </div>
     <div class="container">
         <div class="header">
             <div class="navbar">
@@ -28,20 +36,22 @@
                     <h2>QUANTUM</h2>
                 </div>
                 <a>ABOUT US</a>
-                <a>OUR SERVICES</a>
-                <a>CONTACT US</a>
-                <a>LOCATION</a>
+                <a href="#" class="nav-link" data-target="wrapper2">OUR SERVICES</a>
+                <a href="#" class="nav-link" data-target="footer">CONTACT US</a>
+                <a href="#" class="nav-link" data-target="wrapper4">LOCATION</a>
                 <button class="b1">Visit Store&nbsp;<i class="fa-solid fa-share-from-square"></i></button>
             </div>
         </div>
-        <div class="slides" id="slide1">
+        <div class="slides" id="slide1" data-aos="fade-up">
             <div class="slide1content">
                 <h1>Professional</h1>
                 <h2>Services That</h2>
                 <h3>You Can Trust </h3>
                 <div class="line"></div>
                 <p>
-                    Our PC and accessories shop offers the latest in high-performance desktops, laptops, and essential peripherals to elevate your computing experience. With a commitment to quality and customer satisfaction, we provide top-tier products and expert advice to meet all your tech needs.
+                    Our PC and accessories shop offers the latest in high-performance desktops, laptops, and essential
+                    peripherals to elevate your computing experience. With a commitment to quality and customer
+                    satisfaction, we provide top-tier products and expert advice to meet all your tech needs.
                 </p>
             </div>
             <div class="heroImage">
@@ -50,16 +60,16 @@
         </div>
         <div class="slides" id="slide2">
             <div class="container1">
-                <div class="cards">
-                    <div class="card">
+                <div class="cards" data-aos="flip-down">
+                    <div class="card" data-aos="fade-down">
                         <h2>5K+</h2>
                         <h3>Happy Customers</h3>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up">
                         <h2>10K+</h2>
                         <h3>Products Available</h3>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-down">
                         <h2>50K+</h2>
                         <h3>Products Sold</h3>
                     </div>
@@ -68,7 +78,7 @@
             <div class="wrapper1">
                 <h4 style="text-align: center; font-weight: 600;color: #001e81;">Category Of Products Available</h4>
                 <div class="products">
-                    <div class="product" id="p1">
+                    <div class="product" id="p1" data-aos="flip-down" data-aos-duration="1000">
                         <div class="product-text">
                             <span>Motherboards</span>
                             <p>Starting From</p>
@@ -78,7 +88,7 @@
                             <img src="images/motherboard.png" alt="">
                         </div>
                     </div>
-                    <div class="product" id="p2">
+                    <div class="product" id="p2" data-aos="flip-down" data-aos-duration="1000">
                         <div class="product-text">
                             <span>Printers</span>
                             <p>Starting From</p>
@@ -88,7 +98,7 @@
                             <img src="images/printer_ad.png" alt="">
                         </div>
                     </div>
-                    <div class="product" id="p3">
+                    <div class="product" id="p3" data-aos="flip-down" data-aos-duration="1000">
                         <div class="product-text">
                             <span>Monitors</span>
                             <p>Starting From</p>
@@ -98,7 +108,7 @@
                             <img src="images/monitor_ad.png" alt="">
                         </div>
                     </div>
-                    <div class="product" id="p4">
+                    <div class="product" id="p4" data-aos="flip-down" data-aos-duration="1000">
                         <div class="product-text">
                             <span>Laptops</span>
                             <p>Starting From</p>
@@ -108,7 +118,7 @@
                             <img src="images/laptop_ad.png" alt="">
                         </div>
                     </div>
-                    <div class="product" id="p5">
+                    <div class="product" id="p5" data-aos="flip-down" data-aos-duration="1000">
                         <div class="product-text">
                             <span>SSDs</span>
                             <p>Starting From</p>
@@ -118,7 +128,7 @@
                             <img src="images/SSD.png" alt="">
                         </div>
                     </div>
-                    <div class="product" id="p6">
+                    <div class="product" id="p6" data-aos="flip-down" data-aos-duration="1000">
                         <div class="product-text">
                             <span>Sound devices</span>
                             <p>Starting From</p>
@@ -128,7 +138,7 @@
                             <img src="images/sound_ad.png" alt="">
                         </div>
                     </div>
-                    <div class="product" id="p7">
+                    <div class="product" id="p7" data-aos="flip-down" data-aos-duration="1000">
                         <div class="product-text">
                             <span>CCTV Cameras</span>
                             <p>Starting From</p>
@@ -138,7 +148,7 @@
                             <img src="images/cctv.png" alt="">
                         </div>
                     </div>
-                    <div class="product" id="p8">
+                    <div class="product" id="p8" data-aos="flip-down" data-aos-duration="1000">
                         <div class="product-text">
                             <span>Graphics Cards</span>
                             <p>Starting From</p>
@@ -148,7 +158,7 @@
                             <img src="images/gpu_ad.png" alt="">
                         </div>
                     </div>
-                    <div class="product" id="p9">
+                    <div class="product" id="p9" data-aos="flip-down" data-aos-duration="1000">
                         <div class="product-text">
                             <span>RAM</span>
                             <p>Starting From</p>
@@ -161,7 +171,7 @@
                 </div>
             </div>
             <div class="supports">
-                <div class="support">
+                <div class="support" data-aos="flip-down">
                     <div class="supportIcon">
                         <i class="fa-solid fa-headset"></i>
                     </div>
@@ -170,7 +180,7 @@
                         <span>24/7 Technical Support</span>
                     </div>
                 </div>
-                <div class="support">
+                <div class="support" data-aos="flip-down">
                     <div class="supportIcon">
                         <i class="fa-solid fa-wallet"></i>
                     </div>
@@ -179,7 +189,7 @@
                         <span>All paymeent options Available</span>
                     </div>
                 </div>
-                <div class="support">
+                <div class="support" data-aos="flip-down">
                     <div class="supportIcon">
                         <i class="fa-solid fa-layer-group"></i>
                     </div>
@@ -189,15 +199,17 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper2">
-                <h4 style="text-align: center;font-weight: 600;color: rgb(0, 0, 153);margin-top: 25px;">Services Offered By Us</h4>
+            <div class="wrapper2" id="wrapper2">
+                <h4 style="text-align: center;font-weight: 600;color: rgb(0, 0, 153);margin-top: 25px;">Services Offered
+                    By Us</h4>
                 <div class="features">
-                    <div class="feature">
+                    <div class="feature" data-aos="zoom-in">
                         <h2>Wide Range of Products</h2>
                         <div class="pt1c">
                             <div class="pt1">
                                 <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                                <div class="pt1-text">We provide our customers a diverse selection of laptops, desktops, and accessories from top brands</div>
+                                <div class="pt1-text">We provide our customers a diverse selection of laptops, desktops,
+                                    and accessories from top brands</div>
                             </div>
                             <div class="pt1">
                                 <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
@@ -205,25 +217,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="feature">
+                    <div class="feature" data-aos="zoom-in">
                         <h2>Custom PC Builds</h2>
                         <div class="pt1c">
                             <div class="pt1">
                                 <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                                <div class="pt1-text">Offer custom PC building services tailored to individual needs, from gaming rigs to professional workstations</div>
+                                <div class="pt1-text">Offer custom PC building services tailored to individual needs,
+                                    from gaming rigs to professional workstations</div>
                             </div>
                             <div class="pt1">
                                 <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                                <div class="pt1-text">We provide user-friendly options for our customers to design their own PCs</div>
+                                <div class="pt1-text">We provide user-friendly options for our customers to design their
+                                    own PCs</div>
                             </div>
                         </div>
                     </div>
-                    <div class="feature ">
+                    <div class="feature" data-aos="zoom-in">
                         <h2>Competitive Pricing</h2>
                         <div class="pt1c">
                             <div class="pt1">
                                 <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                                <div class="pt1-text">We provide a competitive pricing and price match guarantees for each & every products</div>
+                                <div class="pt1-text">We provide a competitive pricing and price match guarantees for
+                                    each & every products</div>
                             </div>
                             <div class="pt1">
                                 <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
@@ -231,42 +246,48 @@
                             </div>
                         </div>
                     </div>
-                    <div class="feature">
+                    <div class="feature" data-aos="zoom-in">
                         <h2>Technical Support and Servicing</h2>
                         <div class="pt1c">
                             <div class="pt1">
                                 <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                                <div class="pt1-text">We have every laptop and PC servicing options, including repairs, upgrades, and maintenance plans</div>
+                                <div class="pt1-text">We have every laptop and PC servicing options, including repairs,
+                                    upgrades, and maintenance plans</div>
                             </div>
                             <div class="pt1">
                                 <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                                <div class="pt1-text">We emphasize the expertise of our technical team and the use of genuine parts</div>
+                                <div class="pt1-text">We emphasize the expertise of our technical team and the use of
+                                    genuine parts</div>
                             </div>
                         </div>
                     </div>
-                    <div class="feature">
+                    <div class="feature" data-aos="zoom-in">
                         <h2>Comprehensive Diagnostics</h2>
                         <div class="pt1c">
                             <div class="pt1">
                                 <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                                <div class="pt1-text">We offer detailed diagnostics to identify and resolve hardware and software issues</div>
+                                <div class="pt1-text">We offer detailed diagnostics to identify and resolve hardware and
+                                    software issues</div>
                             </div>
                             <div class="pt1">
                                 <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                                <div class="pt1-text">We provide a full report with recommendations for necessary repairs or upgrades</div>
+                                <div class="pt1-text">We provide a full report with recommendations for necessary
+                                    repairs or upgrades</div>
                             </div>
                         </div>
                     </div>
-                    <div class="feature">
+                    <div class="feature" data-aos="zoom-in">
                         <h2>Hardware Repairs and Upgrades</h2>
                         <div class="pt1c">
                             <div class="pt1">
                                 <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                                <div class="pt1-text">Specialize in repairs and replacements for key components such as motherboards, CPUs, GPUs, and storage devices</div>
+                                <div class="pt1-text">Specialize in repairs and replacements for key components such as
+                                    motherboards, CPUs, GPUs, and storage devices</div>
                             </div>
                             <div class="pt1">
                                 <div class="pt1-icon"><i class="fa-regular fa-circle-check"></i></div>
-                                <div class="pt1-text">We offer upgrade services to enhance performance, such as adding more RAM or upgrading to SSDs</div>
+                                <div class="pt1-text">We offer upgrade services to enhance performance, such as adding
+                                    more RAM or upgrading to SSDs</div>
                             </div>
                         </div>
                     </div>
@@ -278,169 +299,191 @@
                     Your browser does not support the video tag.
                 </video>
                 <div class="overlay">
-                   <div class="overlay-text">
-                    <p>If you're looking to buy your dream PC, PC accessories, or laptops, or if you need any kind of laptop repair services or solutions for PC-related issues, visit our store. At Quantum, we offer a wide range of high-performance components and expert services to meet all your computing needs. Whether you're a gamer, a professional, or just need a reliable machine, our knowledgeable staff is here to help. Contact us via call or WhatsApp at 9331863389 or email us at sen_samir@rediffmail.com to learn more about our products and services.</p>
-                   </div>
+                    <div class="overlay-text" data-aos="fade-up">
+                        <p>If you're looking to buy your dream PC, PC accessories, or laptops, or if you need any kind
+                            of laptop repair services or solutions for PC-related issues, visit our store. At Quantum,
+                            we offer a wide range of high-performance components and expert services to meet all your
+                            computing needs. Whether you're a gamer, a professional, or just need a reliable machine,
+                            our knowledgeable staff is here to help. Contact us via call or WhatsApp at 9331863389 or
+                            email us at sen_samir@rediffmail.com to learn more about our products and services.</p>
+                    </div>
                 </div>
             </div>
             <div class="wrapper3">
                 <div class="swiper mySwiper" id="s1">
-                    <h4 style="color: rgb(0, 56, 78);font-size: 500;text-align: center;">What Our Clients Say About Us</h4>
+                    <h4 style="color: rgb(0, 56, 78);font-size: 500;text-align: center;">What Our Clients Say About Us
+                    </h4>
                     <div class="cunderline" id="u1"></div>
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide"> 
-                        <div class="review" data-swiper-parallax-opacity="0.5" loading="lazy">
-                            <div class="customer-name"  data-swiper-parallax="-100">
-                                <h3>Arpita Das</h3>
-                            </div>
-                            <div class="stars"  data-swiper-parallax="-200">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating"  data-swiper-parallax="-300">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;One of the best 👌shop in the Naihati area. All products quality is so good 👍. Accurate price quick replesmen.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Sabir Hossain</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Good laptop service, low service charge. on sport repairing. 25 years experience . Reliable laptop service center in 24pgs.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="customer-name">
+                                    <h3>Arpita Das</h3>
+                                </div>
+                                <div class="stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                                <div class="customer-rating" data-aos="fade-up">
+                                    <p><i class="fa-solid fa-quote-left"></i>&nbsp;One of the best 👌shop in the Naihati
+                                        area. All products quality is so good 👍. Accurate price quick
+                                        replesmen.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                                </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Subhadip Dutta</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;You can be sure to get the best customer service and total satisfaction. After sales service is great as well.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Subhodeep Sadhukhan</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;One of the best 👌shop in the Naihati area. All products quality is so good 👍.  Accurate price quick replesment&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="customer-name">
+                                    <h3>Sabir Hossain</h3>
+                                </div>
+                                <div class="stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                                <div class="customer-rating" data-aos="fade-up">
+                                    <p><i class="fa-solid fa-quote-left"></i>&nbsp;Good laptop service, low service
+                                        charge. on sport repairing. 25 years experience . Reliable laptop service center
+                                        in 24pgs.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                                </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Sonai Ghosh</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Quantum has very good service since 2006, product price is very resealable, over all it has much better then other.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Satish Chandra Bose</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="notstar">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;They are selling computer accessories at reasonable price.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="customer-name">
+                                    <h3>Subhadip Dutta</h3>
+                                </div>
+                                <div class="stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                                <div class="customer-rating" data-aos="fade-up">
+                                    <p><i class="fa-solid fa-quote-left"></i>&nbsp;You can be sure to get the best
+                                        customer service and total satisfaction. After sales service is great as
+                                        well.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                                </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Dipanwita Ghosh</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Nice service. Very gentle behaviour. Reasonable pricing. Best in Naihati.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Jeet Saha Roy</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Nice store...perfect cost of material.. 100% trustable store...support for customer is very good..&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="customer-name">
+                                    <h3>Subhodeep Sadhukhan</h3>
+                                </div>
+                                <div class="stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                                <div class="customer-rating" data-aos="fade-up">
+                                    <p><i class="fa-solid fa-quote-left"></i>&nbsp;One of the best 👌shop in the Naihati
+                                        area. All products quality is so good 👍. Accurate price quick
+                                        replesment&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                                </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Tapas Chakraborty</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Good laptop service centre. Prices are very cheap.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="customer-name">
+                                    <h3>Sonai Ghosh</h3>
+                                </div>
+                                <div class="stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                                <div class="customer-rating" data-aos="fade-up">
+                                    <p><i class="fa-solid fa-quote-left"></i>&nbsp;Quantum has very good service since
+                                        2006, product price is very resealable, over all it has much better then
+                                        other.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                                </div>
                             </div>
                         </div>
-                      </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="customer-name">
+                                    <h3>Satish Chandra Bose</h3>
+                                </div>
+                                <div class="stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="notstar">&#9733;</span>
+                                </div>
+                                <div class="customer-rating" data-aos="fade-up">
+                                    <p><i class="fa-solid fa-quote-left"></i>&nbsp;They are selling computer accessories
+                                        at reasonable price.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="customer-name">
+                                    <h3>Dipanwita Ghosh</h3>
+                                </div>
+                                <div class="stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                                <div class="customer-rating" data-aos="fade-up">
+                                    <p><i class="fa-solid fa-quote-left"></i>&nbsp;Nice service. Very gentle behaviour.
+                                        Reasonable pricing. Best in Naihati.&nbsp;<i
+                                            class="fa-solid fa-quote-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="customer-name">
+                                    <h3>Jeet Saha Roy</h3>
+                                </div>
+                                <div class="stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                                <div class="customer-rating" data-aos="fade-up">
+                                    <p><i class="fa-solid fa-quote-left"></i>&nbsp;Nice store...perfect cost of
+                                        material.. 100% trustable store...support for customer is very good..&nbsp;<i
+                                            class="fa-solid fa-quote-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="customer-name">
+                                    <h3>Tapas Chakraborty</h3>
+                                </div>
+                                <div class="stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                                <div class="customer-rating" data-aos="fade-up">
+                                    <p><i class="fa-solid fa-quote-left"></i>&nbsp;Good laptop service centre. Prices
+                                        are very cheap.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -474,27 +517,33 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.6891252754262!2d88.42487937419128!3d22.887939579268362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8969a675181df%3A0xa8c6f4fb70d4a704!2sNAIHATI%20QUANTUM!5e0!3m2!1sen!2sin!4v1723387593932!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="wrapper4" data-aos="fade-up" id="wrapper4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.6891252754262!2d88.42487937419128!3d22.887939579268362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8969a675181df%3A0xa8c6f4fb70d4a704!2sNAIHATI%20QUANTUM!5e0!3m2!1sen!2sin!4v1723387593932!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="footer">
+            <div class="footer" id="footer">
                 <div class="frow">
                     <div class="fcolumn">
                         <div class="logo">
                             <img src="logo.png" width="40px">
                             <h2>QUANTUM</h2>
                         </div>
-                        <p> Your ultimate destination for top-quality PCs and accessories since 2004. Visit us to build and customize your perfect gaming setup.</p>
+                        <p> Your ultimate destination for top-quality PCs and accessories since 1997. Visit us to build
+                            and customize your perfect gaming setup.</p>
                     </div>
                     <div class="fcolumn">
-                        <h3>Store <div class="underline"><span></span></div></h3>
+                        <h3>Store <div class="underline"><span></span></div>
+                        </h3>
                         <p>6 No Bijoynagar</p>
                         <p>Naihati, 24 Parganas(N)</p>
                         <p>West Bengal, 743165, India</p>
                         <p class="email-id"><i class="fa-regular fa-envelope"></i>&nbsp;sen_samir@rediffmail.com</p>
                     </div>
                     <div class="fcolumn">
-                        <h3>Quick Links <div class="underline"><span></span></div></h3>
+                        <h3>Quick Links <div class="underline"><span></span></div>
+                        </h3>
                         <ul>
                             <li><a href="">Home</a></li>
                             <li><a href="">About US</a></li>
@@ -503,13 +552,15 @@
                         </ul>
                     </div>
                     <div class="fcolumn">
-                        <h3>Contact Us <div class="underline"><span></span></div></h3>
+                        <h3>Contact Us <div class="underline"><span></span></div>
+                        </h3>
                         <p>+91-9331863389</p>
                         <p>+91-9230558682</p>
                     </div>
                 </div>
                 <hr>
-                <p class="copyright">All Rights Reserved Quantum &nbsp;<i class="fa-regular fa-copyright"></i>&nbsp; 2024</p>
+                <p class="copyright">All Rights Reserved Quantum &nbsp;<i class="fa-regular fa-copyright"></i>&nbsp;
+                    2024</p>
             </div>
         </div>
     </div>
@@ -518,11 +569,39 @@
             <p>No internet connection</p>
         </div>
     </div>
-
     <div id="no-connection" style="display: none; text-align: center; margin-top: 50px;">
         <h1>Please check your internet connection</h1>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script>
+        var loader = document.getElementById("loader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbarLinks = document.querySelectorAll('.nav-link');
+
+            navbarLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetID = this.getAttribute('data-target');
+                    const targetSection = document.getElementById(targetID);
+
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - document.querySelector('.navbar').offsetHeight,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+
+    </script>
 </body>
+
 </html>
